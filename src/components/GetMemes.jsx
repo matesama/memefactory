@@ -36,10 +36,10 @@ const GetMemes = () => {
         <div>
             <article className="article">
                 <TopTextInput />
-                {meme.length > 0 ? <img src={meme[indexCounter].url} alt="Drake Hotline Bling" className="image" s /> : null}
+                {meme.length > 0 ? <img src={meme[indexCounter].url} alt="Drake Hotline Bling" className="image" /> : null}
                 <BottomTextInput />
             </article>
-            <Buttons setIndexCounter={setIndexCounter} indexCounter={indexCounter} />
+            <Buttons setIndexCounter={setIndexCounter} indexCounter={indexCounter} meme={meme} />
         </div>
     )
 }
