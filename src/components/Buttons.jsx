@@ -3,16 +3,17 @@ const Buttons = ({indexCounter, setIndexCounter}) => {
 
     const handlePrevClick = () => {
         if(indexCounter <= 0) {
-            setIndexCounter(0);
-            alert("This is the first meme, there is no previous one")
+            setIndexCounter(99);
+            
+            //alert("This is the first meme, there is no previous one")
         } else {
             setIndexCounter(indexCounter - 1);
         }
     }
     const handleNextClick = () => {
-        if(indexCounter.length === 100) {
-            setIndexCounter(100);
-            alert("This is the last meme, there is no next one")
+        if(indexCounter >= 99) {
+            setIndexCounter(0);
+            //alert("This is the last meme, there is no next one")
         } else {
             setIndexCounter(indexCounter + 1);
         }
