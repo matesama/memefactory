@@ -3,6 +3,8 @@ import axios from "axios";
 import Buttons from "./Buttons";
 import TopTextInput from "./TopTextInput";
 import BottomTextInput from "./BottomTextInput";
+import Upload from './Upload';
+
 
 const GetMemes = () => {
     const [meme, setMeme] = useState([]);
@@ -40,6 +42,7 @@ const GetMemes = () => {
                 <BottomTextInput />
             </article>
             <Buttons setIndexCounter={setIndexCounter} indexCounter={indexCounter} meme={meme} />
+            <Upload />
         </div>
     )
 }
