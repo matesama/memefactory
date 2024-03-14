@@ -1,6 +1,6 @@
 {
-  "name": "memefactory",
   "homepage": "https://matesama.github.io/memeFactory/",
+  "name": "memeFactory",
   "private": true,
   "version": "0.0.0",
   "type": "module",
